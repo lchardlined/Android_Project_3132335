@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020">
+
+
+    <!-- Background Image -->
+
+    <ImageView
+
+        android:id="@+id/backgroundImage"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+
+        android:src="@android:drawable/ic_menu_gallery"/>
+
+
+
+    <!-- Character Sprite -->
+
+    <ImageView
+
+        android:id="@+id/characterSprite"
+
+        android:layout_width="250dp"
+
+        android:layout_height="400dp"
+
+        android:layout_gravity="center"
+
+        android:src="@android:drawable/ic_menu_myplaces"
+
+        android:scaleType="centerInside"/>
+
+
+
+    <!-- Dialogue Window -->
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/dialogueBox"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="180dp"
+
+        android:layout_gravity="bottom"
+
+        android:layout_margin="15dp"
+
+        app:cardCornerRadius="15dp"
+
+        app:cardElevation="8dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+
+            android:padding="20dp">
+
+
+            <!-- Character Name -->
+
+            <TextView
+
+                android:id="@+id/characterName"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Narrator"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"/>
+
+
+
+            <!-- Dialogue -->
+
+            <TextView
+
+                android:id="@+id/dialogueText"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="15dp"
+
+                android:text="Dialogue appears here..."
+
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
